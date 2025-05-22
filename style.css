@@ -446,6 +446,15 @@ gold { color: #f4b942; }
     padding: 20px;
   }
 
+  .hero-buttons a {
+    flex: 1;
+    text-align: center;
+    max-width: 160px;
+  }
+  .hero-text {
+    padding: 0 30px;
+  }
+
   .contact-form input,
   .contact-form textarea {
     font-size: 0.95rem;
