@@ -54,6 +54,9 @@ nav a {
   .hamburger {
     display: block;
   }
+  .logo-title {
+  flex: 1;
+}
 
   nav {
     flex-direction: column;
@@ -494,4 +497,44 @@ gold { color: #f4b942; }
 .gold { color: #f4b942; }
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .hero-text {
+    padding: 0 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a {
+    max-width: 160px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 106px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 94px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 66px;
+  }
 }
