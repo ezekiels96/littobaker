@@ -203,10 +203,11 @@ font-family: 'Font Awesome 6 Brands';
 
 .treats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Always 2 items per row */
   gap: 30px;
   justify-content: center;
 }
+
 
 .treat-card {
   background: white;
@@ -380,8 +381,17 @@ footer {
 /* Utility Colors */
 .pink { color: #e95bbf; }
 .purple { color: #b187f3; }
-gold { color: #f4b942; }
+.gold { color: #f4b942; }
 .green { color: #3ac47d; }
+.purple { color: #b187f3; }      
+.sunshine { color: #f9c94c; }    
+.blush { color: #f29cab; }       
+.tangerine { color: #ffb870; }  
+.lilac { color: #d5b3f0; }      
+.sky { color: #94d0f1; }         
+.seamist { color: #b2e2c2; }     
+.mint { color: #a0e6cf; }        
+.rose { color: #f7a8a4; } 
 .contact-section {
   max-width: 700px;
   margin: 60px auto;
@@ -513,6 +523,11 @@ html {
     width: 100%;
     text-align: center;
   }
+  @media (max-width: 600px) {
+  .treats-grid {
+    grid-template-columns: 1fr;
+  }
+}
 }
 
 .logo-title {
@@ -536,4 +551,88 @@ html {
   .logo-img {
     width: 49px;
   }
+}
+
+.modal-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modal-nav button {
+  background: white;
+  border: none;
+  font-size: 24px;
+  padding: 8px 12px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .order-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .order-item select,
+  .order-item input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .remove-item {
+    background-color: #ffcccc;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .add-item-btn {
+  background-color: #f89ecb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 0 4px 10px rgba(248, 158, 203, 0.3);
+  margin-top: 10px;
+}
+
+.add-item-btn:hover {
+  background-color: #e95bbf;
+  box-shadow: 0 6px 16px rgba(233, 91, 191, 0.4);
+}
+
+.form-intro {
+  background-color: #fef6fb;
+  border: 1px solid #f9d4e7;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(248, 158, 203, 0.1);
+  text-align: center;
+}
+
+.form-intro p {
+  margin: 0;
+}
+
+.form-intro strong {
+  color: #e95bbf;
 }
