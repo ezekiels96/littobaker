@@ -551,6 +551,28 @@ html {
   .logo-img {
     width: 49px;
   }
+  .order-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .order-item select {
+    width: 60%;
+  }
+
+  .order-item input[type="number"] {
+    width: 25%;
+  }
+
+  .order-item .remove-item {
+    width: 15%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .modal-nav {
@@ -580,6 +602,10 @@ html {
     gap: 10px;
     align-items: center;
   }
+  .order-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 
   .order-item select,
   .order-item input {
